@@ -320,11 +320,11 @@ if "what_if" not in st.session_state: st.session_state.what_if=None
 # SIDEBAR
 # ============================================================
 with st.sidebar:
-    klogo=ASSETS/"kalyani_logo.png"
-    mlogo=ASSETS/"mukand_logo.png"
-    st.markdown('<div class="logo-row">',unsafe_allow_html=True)
-    st.image([str(klogo),str(mlogo)],width=88)
-    st.markdown('</div>',unsafe_allow_html=True)
+    st.markdown(
+        '<div class="brand-title">🏭 BAJAJ MUKAND</div>'
+        '<div class="brand-sub">Alloy Steel Group • Hospet Plant</div>',
+        unsafe_allow_html=True
+    )
     st.markdown('<div class="jv-title">KALYANI × MUKAND</div><div class="jv-sub">Joint Venture • Hospet Plant</div>',unsafe_allow_html=True)
     st.markdown("---")
 
